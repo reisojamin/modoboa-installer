@@ -26,8 +26,8 @@ jobs:
     - name: Build and deploy to CapRover
       run: |
         docker build -t modoboa-installer .
-        docker tag modoboa-installer:latest captain.your-domain.com/modoboa-installer:latest
-        docker push captain.your-domain.com/modoboa-installer:latest
+        docker tag modoboa-installer:latest captain.reikuu.com/modoboa-installer:latest
+        docker push captain.reikuu.com/modoboa-installer:latest
       env:
         CAPROVER_SERVER: ${{ secrets.CAPROVER_SERVER }}
         CAPROVER_PASSWORD: ${{ secrets.CAPROVER_PASSWORD }}
